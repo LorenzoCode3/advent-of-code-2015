@@ -9,12 +9,12 @@ The structure of the repository is as follows:
 ```
 advent-of-code-2015/
 │
-├── Day1/
+├── Day01/
 │   ├── Day1Part1.py
 │   ├── Day1Part2.py
 │   └── input.txt
 │
-├── Day2/
+├── Day02/
 │   ├── Day2Part1.py
 │   ├── Day2Part2.py
 │   └── input.txt
