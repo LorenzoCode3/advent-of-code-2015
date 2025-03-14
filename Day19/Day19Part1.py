@@ -5,11 +5,11 @@ with open(os.path.join(os.path.dirname(__file__), 'input.txt'), 'r') as file:
     lines = file.read()
 
 molecules = []
-string = ""
+string = ''
 
 for line in lines.splitlines():
-    if "=>" in line:
-        base, replacement = line.split(" => ")
+    if '=>' in line:
+        base, replacement = line.split(' => ')
         molecules.append((base, replacement))
     elif line:
         string = line
@@ -23,5 +23,4 @@ for i, part in enumerate(string_parts):
             new_string = string_parts[:i] + [replacement] + string_parts[i+1:]
             possibilities.add(''.join(new_string))
 
-print(possibilities)
-print("Possibilities:", len(possibilities))
+print(len(possibilities))
